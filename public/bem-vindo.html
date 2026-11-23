@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="logo" href="index.html"><span class="logo-icone"><span></span><span></span><span></span></span>Cadastro</a>
+            <div class="topo-usuario">
+                <span id="topoNome"></span>
+                <button class="contorno pequeno" id="btnSair">Sair</button>
+            </div>
+        </div>
+    </header>
+    <main class="pagina">
+        <div class="capa">
+            <small>Usuário comum</small>
+            <h1 id="saudacao">Olá</h1>
+            <p>Você entrou com sucesso.</p>
+        </div>
+        <div class="cartao">
+            <div class="avatar" id="avatar"></div>
+            <dl>
+                <dt>Nome</dt><dd id="dNome"></dd>
+                <dt>Idade</dt><dd id="dIdade"></dd>
+                <dt>CPF</dt><dd id="dCpf"></dd>
+            </dl>
+        </div>
+    </main>
+    <script src="utils.js"></script>
+    <script src="bem-vindo.js"></script>
+</body>
+</html>

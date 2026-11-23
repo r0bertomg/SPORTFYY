@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="logo" href="index.html"><span class="logo-icone"><span></span><span></span><span></span></span>Cadastro</a>
+            <div class="topo-usuario">
+                <span id="topoNome"></span>
+                <button class="contorno pequeno" id="btnSair">Sair</button>
+            </div>
+        </div>
+    </header>
+    <main class="pagina">
+        <div class="capa">
+            <small>Administrador</small>
+            <h1>Gerenciar usuários</h1>
+            <p>Veja, atualize e apague os cadastros.</p>
+        </div>
+        <div id="mensagem" class="mensagem"></div>
+        <div class="barra">
+            <span class="contador"><span id="contador">0</span> usuários</span>
+            <input type="search" id="busca" placeholder="Buscar por nome ou CPF">
+        </div>
+        <div class="tabela-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>CPF</th>
+                        <th>Tipo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-corpo"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <dialog id="dialogo">
+        <h2>Editar usuário</h2>
+        <div id="mensagemEdicao" class="mensagem"></div>
+        <form id="formEdicao">
+            <input type="hidden" id="editId">
+            <div class="campo">
+                <label for="editNome">Nome</label>
+                <input type="text" id="editNome" required>
+            </div>
+            <div class="linha">
+                <div class="campo">
+                    <label for="editIdade">Idade</label>
+                    <input type="number" id="editIdade" min="0" max="130" required>
+                </div>
+                <div class="campo">
+                    <label for="editCpf">CPF</label>
+                    <input type="text" id="editCpf" data-cpf inputmode="numeric" required>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="editSenha">Nova senha</label>
+                <input type="password" id="editSenha" placeholder="Deixe em branco para manter">
+            </div>
+            <div class="botoes">
+                <button type="button" class="contorno" id="btnCancelar">Cancelar</button>
+                <button type="submit">Salvar</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="utils.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

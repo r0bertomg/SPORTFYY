@@ -1,0 +1,44 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "idade": 20,
+      "cpf": "123.456.789-00",
+      "senha": "123456",
+      "role": "comum"
+    },
+    {
+      "id": 2,
+      "nome": "adm",
+      "idade": 30,
+      "cpf": "000.000.000-00",
+      "senha": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 4,
+      "nome": "Pedro",
+      "idade": "30",
+      "cpf": "111.222.333-44",
+      "senha": "123456",
+      "role": "comum"
+    },
+    {
+      "id": 5,
+      "nome": "Tiago",
+      "idade": "70",
+      "cpf": "999.888.777-66",
+      "senha": "123456",
+      "role": "comum"
+    },
+    {
+      "nome": "miguel",
+      "idade": "25",
+      "cpf": "111.111.111-11",
+      "senha": "1234",
+      "role": "comum",
+      "id": 6
+    }
+  ]
+}
